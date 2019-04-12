@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://EDI.court.gov.cn/2016" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EDI.court.gov.cn/2016" elementFormDefault="qualified">
+<xsd:include schemaLocation="_0A_类型_基础.xsd"/>
+	<xsd:include schemaLocation="_00_结构_复用.xsd"/>
+  <xsd:include schemaLocation="_ZDY_结构_自定义复用.xsd" />
+	
+	<xsd:element name="root" type="params"/>
+</xsd:schema>

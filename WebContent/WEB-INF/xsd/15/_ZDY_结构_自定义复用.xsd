@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 (http://www.altova.com) by  () -->
+<xsd:schema xmlns="http://EDI.court.gov.cn/2016" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EDI.court.gov.cn/2016" elementFormDefault="qualified">
+	<xsd:include schemaLocation="_00_结构_复用.xsd"/>
+	<xsd:complexType name="案件列表文件">
+		<xsd:sequence>
+			<xsd:element name="R" type="案件列表文件1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="案件列表文件1">
+		<xsd:sequence>
+			<xsd:element name="序号_文件" type="N"/>
+			<xsd:element name="文件名称" type="C240"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="收结存列表文件">
+		<xsd:sequence>
+			<xsd:element name="生成时间" type="DT"/>
+			<xsd:element name="案件列表文件" type="案件列表文件"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="案件列表1">
+		<xsd:sequence>
+			<xsd:element name="序号_案件" type="N"/>
+			<xsd:element name="案件标识" type="CID"/>
+			<xsd:element name="案号" type="C50" minOccurs="0"/>
+			<xsd:element name="收案日期" type="D" minOccurs="0"/>
+			<xsd:element name="不予登记立案日期" type="D" minOccurs="0"/>
+			<xsd:element name="不予受理裁定日期" type="D" minOccurs="0"/>
+			<xsd:element name="登记立案日期" type="D" minOccurs="0"/>
+			<xsd:element name="结案日期" type="D" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="案件列表">
+		<xsd:sequence>
+			<xsd:element name="R" type="案件列表1" maxOccurs="1000"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="收结存列表1">
+		<xsd:sequence>
+			<xsd:element name="生成时间" type="DT"/>
+			<xsd:element name="案件列表" type="案件列表" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="收结存列表">
+		<xsd:sequence>
+			<xsd:element name="R" type="收结存列表1" maxOccurs="10"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="FileName">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="300"/>
+			<xsd:pattern value=".+\.(pdf|doc|docx|tif|tiff|wps|jpg|jpeg|bmp|png|mp3|wma|ra|rm|rmvb|txt|htm|html)"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="目录">
+		<xsd:sequence>
+			<xsd:element name="目录编号" type="C32" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="父目录编号" type="C32" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="目录名称" type="C300" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="是否正卷" type="N" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="序号" type="N" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="开始页数" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="结束页数" type="N" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="目录列表">
+		<xsd:sequence>
+			<xsd:element name="R" type="目录" minOccurs="0" maxOccurs="32768"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="文件">
+		<xsd:sequence>
+			<xsd:element name="序号" type="N" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="文件名称" type="FileName" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="所属目录编号" type="C32" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="文件大小" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="文件标识" type="C300" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="文件列表">
+		<xsd:sequence>
+			<xsd:element name="R" type="文件" minOccurs="0" maxOccurs="32768"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="档案信息">
+		<xsd:sequence>
+			<xsd:element name="档案或卷宗" type="N" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="案件标识" type="CID" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="案号" type="C50" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="立案日期" type="D" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="结案日期" type="D" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="总页数" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="承办人" type="C50" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="目录信息" type="目录列表" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="文件信息" type="文件列表" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="laxx">
+		<xsd:sequence>
+			<xsd:element name="ajbs" type="CID"/>
+			<xsd:element name="ah" type="C50"/>
+			<xsd:element name="sarq" type="D" minOccurs="0"/>
+			<xsd:element name="bydjlarq" type="D" minOccurs="0"/>
+			<xsd:element name="byslcdrq" type="D" minOccurs="0"/>
+			<xsd:element name="djlarq" type="D" minOccurs="0"/>
+			<xsd:element name="laay" type="Cdx" minOccurs="0"/>
+			<xsd:element name="saly" type="N" minOccurs="0"/>
+			<xsd:element name="laay_ztlx" type="N" minOccurs="0"/>
+			<xsd:element name="laay_xzxwzl" type="Cdx" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="jaxx">
+		<xsd:sequence>
+			<xsd:element name="ajbs" type="CID"/>
+			<xsd:element name="ah" type="C50"/>
+			<xsd:element name="sarq" type="D" minOccurs="0"/>
+			<xsd:element name="bydjlarq" type="D" minOccurs="0"/>
+			<xsd:element name="byslcdrq" type="D" minOccurs="0"/>
+			<xsd:element name="djlarq" type="D" minOccurs="0"/>
+			<xsd:element name="laay" type="Cdx" minOccurs="0"/>
+			<xsd:element name="saly" type="N" minOccurs="0"/>
+			<xsd:element name="laay_ztlx" type="N" minOccurs="0"/>
+			<xsd:element name="laay_xzxwzl" type="Cdx" minOccurs="0"/>
+			<xsd:element name="jarq" type="D" minOccurs="0"/>
+			<xsd:element name="jaay" type="Cdx" minOccurs="0"/>
+			<xsd:element name="jafs" type="N" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="lalist">
+		<xsd:sequence>
+			<xsd:element name="R" type="laxx" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="jalist">
+		<xsd:sequence>
+			<xsd:element name="R" type="jaxx" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="data">
+		<xsd:sequence>
+			<xsd:element name="id" type="N"/>
+			<xsd:element name="lalist" type="lalist"/>
+			<xsd:element name="jalist" type="jalist"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="datas">
+		<xsd:sequence>
+			<xsd:element name="R" type="data" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="params">
+		<xsd:sequence>
+			<xsd:element name="tjsj" type="DT"/>
+			<xsd:element name="gyid" type="N"/>
+			<xsd:element name="datas" type="datas" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="法院信息">
+		<xsd:sequence>
+			<xsd:element name="代码" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="上级代码" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="分级码" type="C10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="名称" type="C100" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="代字" type="C10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="说明" type="C200" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="庭室机构1">
+		<xsd:sequence>
+			<xsd:element name="实体码" type="CEK" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="序号" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="庭室机构标识" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="名称" type="C50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="类型" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="所在法院" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="有效" type="N" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="庭室机构信息">
+		<xsd:sequence>
+			<xsd:element name="R" type="庭室机构1" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="法院工作人员1">
+		<xsd:sequence>
+			<xsd:element name="实体码" type="CEK" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="序号" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="人员标识" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="姓名" type="C50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="性别" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="出生日期" type="D" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="民族" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="文化程度" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="婚姻状况" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="身份证号码" type="C30" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="政治面貌" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="行政级别" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="职务" type="C100" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="正式编制" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="电话号码" type="C20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="有效" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="法官等级" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="法警等级" type="N" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="所在庭室机构" type="N" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="法院工作人员信息">
+		<xsd:sequence>
+			<xsd:element name="R" type="法院工作人员1" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

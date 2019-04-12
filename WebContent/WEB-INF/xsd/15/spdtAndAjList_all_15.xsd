@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!-- 定义类型 -->
+	<xsd:simpleType name="案件类型">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="0102"/>
+			<xsd:enumeration value="0103"/>
+			<xsd:enumeration value="0105"/>
+			<xsd:enumeration value="0106"/>
+			<xsd:enumeration value="0107"/>
+			<xsd:enumeration value="0108"/>
+			<xsd:enumeration value="0109"/>
+			<xsd:enumeration value="0110"/>
+			<xsd:enumeration value="0112"/>
+			<xsd:enumeration value="0113"/>
+			<xsd:enumeration value="0114"/>
+			<xsd:enumeration value="0116"/>
+			<xsd:enumeration value="0117"/>
+			<xsd:enumeration value="0118"/>
+			<xsd:enumeration value="0119"/>
+			<xsd:enumeration value="0201"/>
+			<xsd:enumeration value="0202"/>
+			<xsd:enumeration value="0204"/>
+			<xsd:enumeration value="0205"/>
+			<xsd:enumeration value="0206"/>
+			<xsd:enumeration value="0207"/>
+			<xsd:enumeration value="0208"/>
+			<xsd:enumeration value="0210"/>
+			<xsd:enumeration value="0211"/>
+			<xsd:enumeration value="0212"/>
+			<xsd:enumeration value="0214"/>
+			<xsd:enumeration value="0215"/>
+			<xsd:enumeration value="0216"/>
+			<xsd:enumeration value="0217"/>
+			<xsd:enumeration value="0219"/>
+			<xsd:enumeration value="0220"/>
+			<xsd:enumeration value="0221"/>
+			<xsd:enumeration value="0222"/>
+			<xsd:enumeration value="0224"/>
+			<xsd:enumeration value="0225"/>
+			<xsd:enumeration value="0226"/>
+			<xsd:enumeration value="0227"/>
+			<xsd:enumeration value="0229"/>
+			<xsd:enumeration value="0230"/>
+			<xsd:enumeration value="0231"/>
+			<xsd:enumeration value="0232"/>
+			<xsd:enumeration value="0301"/>
+			<xsd:enumeration value="0302"/>
+			<xsd:enumeration value="0304"/>
+			<xsd:enumeration value="0305"/>
+			<xsd:enumeration value="0306"/>
+			<xsd:enumeration value="0307"/>
+			<xsd:enumeration value="0308"/>
+			<xsd:enumeration value="0310"/>
+			<xsd:enumeration value="0311"/>
+			<xsd:enumeration value="0312"/>
+			<xsd:enumeration value="0313"/>
+			<xsd:enumeration value="0314"/>
+			<xsd:enumeration value="0315"/>
+			<xsd:enumeration value="0316"/>
+			<xsd:enumeration value="0317"/>
+			<xsd:enumeration value="0318"/>
+			<xsd:enumeration value="0319"/>
+			<xsd:enumeration value="0320"/>
+			<xsd:enumeration value="0321"/>
+			<xsd:enumeration value="0322"/>
+			<xsd:enumeration value="0323"/>
+			<xsd:enumeration value="0325"/>
+			<xsd:enumeration value="0326"/>
+			<xsd:enumeration value="0328"/>
+			<xsd:enumeration value="0329"/>
+			<xsd:enumeration value="0330"/>
+			<xsd:enumeration value="0332"/>
+			<xsd:enumeration value="0333"/>
+			<xsd:enumeration value="0401"/>
+			<xsd:enumeration value="0402"/>
+			<xsd:enumeration value="0404"/>
+			<xsd:enumeration value="0405"/>
+			<xsd:enumeration value="0406"/>
+			<xsd:enumeration value="0407"/>
+			<xsd:enumeration value="0409"/>
+			<xsd:enumeration value="0410"/>
+			<xsd:enumeration value="0411"/>
+			<xsd:enumeration value="0502"/>
+			<xsd:enumeration value="0503"/>
+			<xsd:enumeration value="0504"/>
+			<xsd:enumeration value="0505"/>
+			<xsd:enumeration value="0506"/>
+			<xsd:enumeration value="0507"/>
+			<xsd:enumeration value="0508"/>
+			<xsd:enumeration value="0510"/>
+			<xsd:enumeration value="0511"/>
+			<xsd:enumeration value="0512"/>
+			<xsd:enumeration value="0513"/>
+			<xsd:enumeration value="0514"/>
+			<xsd:enumeration value="0515"/>
+			<xsd:enumeration value="0516"/>
+			<xsd:enumeration value="0518"/>
+			<xsd:enumeration value="0519"/>
+			<xsd:enumeration value="0520"/>
+			<xsd:enumeration value="0521"/>
+			<xsd:enumeration value="0522"/>
+			<xsd:enumeration value="0523"/>
+			<xsd:enumeration value="0524"/>
+			<xsd:enumeration value="0602"/>
+			<xsd:enumeration value="0603"/>
+			<xsd:enumeration value="0604"/>
+			<xsd:enumeration value="0605"/>
+			<xsd:enumeration value="0606"/>
+			<xsd:enumeration value="0607"/>
+			<xsd:enumeration value="0608"/>
+			<xsd:enumeration value="0609"/>
+			<xsd:enumeration value="0611"/>
+			<xsd:enumeration value="0612"/>
+			<xsd:enumeration value="0613"/>
+			<xsd:enumeration value="0614"/>
+			<xsd:enumeration value="0615"/>
+			<xsd:enumeration value="0616"/>
+			<xsd:enumeration value="0617"/>
+			<xsd:enumeration value="0618"/>
+			<xsd:enumeration value="0619"/>
+			<xsd:enumeration value="0621"/>
+			<xsd:enumeration value="0622"/>
+			<xsd:enumeration value="0623"/>
+			<xsd:enumeration value="0624"/>
+			<xsd:enumeration value="0625"/>
+			<xsd:enumeration value="0626"/>
+			<xsd:enumeration value="0627"/>
+			<xsd:enumeration value="0628"/>
+			<xsd:enumeration value="0629"/>
+			<xsd:enumeration value="0631"/>
+			<xsd:enumeration value="0632"/>
+			<xsd:enumeration value="0634"/>
+			<xsd:enumeration value="0635"/>
+			<xsd:enumeration value="0702"/>
+			<xsd:enumeration value="0703"/>
+			<xsd:enumeration value="0704"/>
+			<xsd:enumeration value="0706"/>
+			<xsd:enumeration value="0707"/>
+			<xsd:enumeration value="0708"/>
+			<xsd:enumeration value="0710"/>
+			<xsd:enumeration value="0711"/>
+			<xsd:enumeration value="0712"/>
+			<xsd:enumeration value="0714"/>
+			<xsd:enumeration value="0715"/>
+			<xsd:enumeration value="0717"/>
+			<xsd:enumeration value="0718"/>
+			<xsd:enumeration value="0802"/>
+			<xsd:enumeration value="0803"/>
+			<xsd:enumeration value="0804"/>
+			<xsd:enumeration value="0901"/>
+			<xsd:enumeration value="0902"/>
+			<xsd:enumeration value="0903"/>
+			<xsd:enumeration value="0904"/>
+			<xsd:enumeration value="1002"/>
+			<xsd:enumeration value="1003"/>
+			<xsd:enumeration value="1004"/>
+			<xsd:enumeration value="1006"/>
+			<xsd:enumeration value="1007"/>
+			<xsd:enumeration value="1008"/>
+			<xsd:enumeration value="1009"/>
+			<xsd:enumeration value="1010"/>
+			<xsd:enumeration value="1102"/>
+			<xsd:enumeration value="1103"/>
+			<xsd:enumeration value="1105"/>
+			<xsd:enumeration value="1106"/>
+			<xsd:enumeration value="1108"/>
+			<xsd:enumeration value="1109"/>
+			<xsd:enumeration value="1110"/>
+			<xsd:enumeration value="1112"/>
+			<xsd:enumeration value="1113"/>
+			<xsd:enumeration value="1114"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- 最长为10个英文字母或5个汉字的字符串 -->
+	<xsd:simpleType name="C10">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="10"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- 最长为20个英文字母或10个汉字的字符串 -->
+	<xsd:simpleType name="C20">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="20"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- 最长为30个英文字母或15个汉字的字符串 -->
+	<xsd:simpleType name="C30">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="30"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- 最长为40个英文字母或20个汉字的字符串 -->
+	<xsd:simpleType name="C40">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="40"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- 最长为50个英文字母或25个汉字的字符串 -->
+	<xsd:simpleType name="C50">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- 最长为60个英文字母或30个汉字的字符串 -->
+	<xsd:simpleType name="C60">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="60"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- 最长为100个英文字母或50个汉字的字符串 -->
+	<xsd:simpleType name="C100">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="100"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- 最长为120个英文字母或60个汉字的字符串 -->
+	<xsd:simpleType name="C120">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="120"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- 最长为200个英文字母或100个汉字的字符串 -->
+	<xsd:simpleType name="C200">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="200"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- 最长为240个英文字母或120个汉字的字符串 -->
+	<xsd:simpleType name="C240">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="240"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- 32位整数 -->
+	<xsd:simpleType name="N">
+		<xsd:restriction base="xsd:int"/>
+	</xsd:simpleType>
+	<!-- 16位整数 -->
+	<xsd:simpleType name="SN">
+		<xsd:restriction base="xsd:short"/>
+	</xsd:simpleType>
+	<!-- 8位整数(无符号) -->
+	<xsd:simpleType name="TN">
+		<xsd:restriction base="xsd:unsignedByte"/>
+	</xsd:simpleType>
+	<!-- 浮点数 -->
+	<xsd:simpleType name="F">
+		<xsd:restriction base="xsd:float"/>
+	</xsd:simpleType>
+	<!-- 金额 -->
+	<xsd:simpleType name="M">
+		<xsd:restriction base="xsd:decimal">
+			<xsd:minInclusive value="-922337203685477.5808"/>
+			<xsd:maxInclusive value="922337203685477.5807"/>
+			<xsd:totalDigits value="20"/>
+			<xsd:fractionDigits value="4"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- 日期 -->
+	<xsd:simpleType name="D">
+		<xsd:restriction base="xsd:date"/>
+	</xsd:simpleType>
+	<!-- 时间 -->
+	<xsd:simpleType name="T">
+		<xsd:restriction base="xsd:time"/>
+	</xsd:simpleType>
+	<!-- 日期时间 -->
+	<xsd:simpleType name="DT">
+		<xsd:restriction base="xsd:dateTime"/>
+	</xsd:simpleType>
+	<!-- 二进制对象，BASE64编码 -->
+	<xsd:simpleType name="BB">
+		<xsd:restriction base="xsd:base64Binary"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="案件标识">
+		<xsd:restriction base="xsd:nonNegativeInteger">
+			<xsd:totalDigits value="15"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="CID">
+		<xsd:restriction base="xsd:nonNegativeInteger">
+			<xsd:totalDigits value="19"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- 字符串，不限长度，表示代码选项的多选方案 -->
+	<xsd:simpleType name="Cdx">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="4000"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- 校验开始 -->
+	<xsd:complexType name="laxx">
+		<xsd:sequence>
+			<xsd:element name="ajbs" type="CID"/>
+			<xsd:element name="ajlx" type="案件类型"/>
+			<xsd:element name="ah" type="C50"/>
+			<xsd:element name="jbfy" type="N"/>
+			<xsd:element name="sarq" type="D"/>
+			<xsd:element name="bydjlarq" type="D" minOccurs="0"/>
+			<xsd:element name="byslcdrq" type="D" minOccurs="0"/>
+			<xsd:element name="djlarq" type="D" minOccurs="0"/>
+			<xsd:element name="laay" type="Cdx" minOccurs="0"/>
+			<xsd:element name="saly" type="N"/>
+			<xsd:element name="laayztlx" type="N" minOccurs="0"/>
+			<xsd:element name="laayxzxwzl" type="Cdx" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="jaxx">
+		<xsd:sequence>
+			<xsd:element name="ajbs" type="CID"/>
+			<xsd:element name="ajlx" type="案件类型"/>
+			<xsd:element name="ah" type="C50"/>
+			<xsd:element name="jbfy" type="N"/>
+			<xsd:element name="sarq" type="D"/>
+			<xsd:element name="bydjlarq" type="D" minOccurs="0"/>
+			<xsd:element name="byslcdrq" type="D" minOccurs="0"/>
+			<xsd:element name="djlarq" type="D" minOccurs="0"/>
+			<xsd:element name="laay" type="Cdx" minOccurs="0"/>
+			<xsd:element name="saly" type="N"/>
+			<xsd:element name="laayztlx" type="N" minOccurs="0"/>
+			<xsd:element name="laayxzxwzl" type="Cdx" minOccurs="0"/>
+			<xsd:element name="jarq" type="D"/>
+			<xsd:element name="jaay" type="Cdx" minOccurs="0"/>
+			<xsd:element name="jafs" type="N"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="lalist">
+		<xsd:sequence>
+			<xsd:element name="R" type="laxx" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="jalist">
+		<xsd:sequence>
+			<xsd:element name="R" type="jaxx" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="data">
+		<xsd:sequence>
+			<xsd:element name="id" type="N"/>
+			<xsd:element name="drxsajsl" type="N"/>
+			<xsd:element name="dryjajsl" type="N"/>
+			<xsd:element name="lalist" type="lalist"/>
+			<xsd:element name="jalist" type="jalist"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="datas">
+		<xsd:sequence>
+			<xsd:element name="R" type="data" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="params">
+		<xsd:sequence>
+			<xsd:element name="tjsj" type="DT"/>
+			<xsd:element name="gyid" type="N"/>
+			<xsd:element name="datas" type="datas" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="root" type="params"/>
+</xsd:schema>

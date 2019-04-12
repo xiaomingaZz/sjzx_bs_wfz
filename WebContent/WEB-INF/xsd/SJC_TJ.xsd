@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GB2312"?>
+<xsd:schema xmlns="http://dataexchange.court.gov.cn/2009/data"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   targetNamespace="http://dataexchange.court.gov.cn/2009/data"
+   elementFormDefault="qualified">
+   
+   <xsd:include schemaLocation="SJC.xsd"/>
+   <xsd:include schemaLocation="_A_类型_基础.xsd"/>
+   <xsd:element name="收结存统计" type="收结存统计"/>
+	<xsd:complexType name="收结存统计">
+		<xsd:sequence>
+			<xsd:element name="收结存统计数据" type="收结存统计数据"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+</xsd:schema>

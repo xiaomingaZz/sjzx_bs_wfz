@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/activation-1.3.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/ant-1.9.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/ant-launcher-1.9.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/axis-1.4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/axis-ant-1.2-RC3.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/axis-jaxrpc-1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/bcprov-ext-jdk15on-148-1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/bouncycastle-1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/cindy-2.4.4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/commons-beanutils-1.8.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/commons-codec-1.4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/commons-collections-3.2.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/commons-discovery-0.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/commons-io-1.4.jar!/" />
+    <libelement value="file://WebContent/WEB-INF/lib/commons-lang-2.3.jar" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/commons-lang-2.4.jar!/" />
+    <libelement value="file://WebContent/WEB-INF/lib/commons-logging-1.0.3.jar" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/commons-logging-1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/commons-net-1.4.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/dataexchange-1.0.9.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/dom4j-1.6.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/EPClient-2.0.9.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/EPCommon-2.0.5.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/ezmorph-1.0.6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/httpclient-4.2.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/httpcore-4.2.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/httpmime-4.2.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/jacob.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/jaxb-api.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/jaxb-impl-2.0.5.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/jaxen-1.1.4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/jboss-common-client-3.2.3.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/jconn3.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/jms-1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/jmxri-1.2.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/jmxtools-1.2.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/jodconverter-2.2.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/jodconverter-cli-2.2.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/json-lib-2.2-jdk15.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/juh-3.0.1.jar!/" />
+    <libelement value="file://WebContent/WEB-INF/lib/junit-3.8.1.jar" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/jurt-3.0.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/jzlib-1.1.1.jar!/" />
+    <libelement value="file://WebContent/WEB-INF/lib/log4j-1.2.14.jar" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/log4j-1.2.15.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/mail-1.3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/mina-core-2.0.7.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/mina-filter-compression-2.0.7.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/oro-2.0.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/poi-3.8-20120326.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/poi-examples-3.8-20120326.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/poi-excelant-3.8-20120326.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/poi-ooxml-3.8-20120326.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/poi-ooxml-schemas-3.8-20120326.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/poi-scratchpad-3.8-20120326.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/ridl-3.0.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/saaj-1.2.jar!/" />
+    <libelement value="file://WebContent/WEB-INF/lib/slf4j-api-1.5.6.jar" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/slf4j-api-1.6.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/slf4j-jdk14-1.5.6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/TDH_Core.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/TDH_Framework.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/tdhframe.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/unoil-3.0.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/wsdl4j-1.6.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/xml-apis-1.3.04.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/spring-webmvc.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/spring.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/quartz-all-1.6.0.jar!/" />
+    <libelement value="file://WebContent/WEB-INF/lib/servlet-api2.4.jar" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/commons-dbcp-1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/commons-pool-1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/jta-1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/cxf-2.0.13.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/wstx-asl-3.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/xml-resolver-1.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/XmlSchema-1.4.7.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/commons-httpclient.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebContent/WEB-INF/lib/neethi-2.0.4.jar!/" />
+    <conelement value="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v6.0" />
+    <conelement value="org.eclipse.jst.j2ee.internal.web.container" />
+    <conelement value="org.eclipse.jst.j2ee.internal.module.container" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/WebContent/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/WebContent" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/build/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="jdk" jdkName="1.6" jdkType="JavaSDK" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://D:/Tomcat/apache-tomcat-6.0.28/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://D:/Tomcat/apache-tomcat-6.0.28/lib" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="activation-1.3.0" level="project" />
+  </component>
+</module>

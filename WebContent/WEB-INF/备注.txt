@@ -1,0 +1,8 @@
+接口地址
+http://192.1.36.119:8099/spy/services/spdtService?wsdl
+namespace
+webservice.zb.ywk.xxq.thunisoft.com
+方法名
+importSpdtAndAjList
+参数名
+arg0

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="GB2312"?>
+<xsd:schema xmlns="http://dataexchange.court.gov.cn/2009/data" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://dataexchange.court.gov.cn/2009/data" elementFormDefault="qualified">
+	
+	<xsd:simpleType name="案件类型">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1"/>
+			<xsd:enumeration value="2"/>
+			<xsd:enumeration value="3"/>
+			<xsd:enumeration value="4"/>
+			<xsd:enumeration value="5"/>
+			<xsd:enumeration value="6"/>
+			<xsd:enumeration value="7"/>
+			<xsd:enumeration value="8"/>
+			<xsd:enumeration value="9"/>
+			<xsd:enumeration value="10"/>
+			<xsd:enumeration value="11"/>
+			<xsd:enumeration value="12"/>
+			<xsd:enumeration value="13"/>
+			<xsd:enumeration value="14"/>
+			<xsd:enumeration value="15"/>
+			<xsd:enumeration value="16"/>
+			<xsd:enumeration value="17"/>
+			<xsd:enumeration value="18"/>
+			<xsd:enumeration value="19"/>
+			<xsd:enumeration value="20"/>
+			<xsd:enumeration value="21"/>
+			<xsd:enumeration value="22"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="案件列表文件">
+		<xsd:sequence>
+			<xsd:element name="R" type="案件列表文件1" maxOccurs="1000"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="案件列表文件1">
+		<xsd:sequence>
+			<xsd:element name="序号_文件" type="SN"/>
+			<xsd:element name="文件名称" type="C240"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="收结存统计数据">
+		<xsd:sequence>
+			<xsd:element name="生成时间" type="DT"/>
+			<xsd:element name="案件数量" type="N"/>
+			<xsd:element name="案件列表文件" type="案件列表文件"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="案件列表1">
+		<xsd:sequence>
+			<xsd:element name="序号_案件" type="SN"/>
+			<xsd:element name="案件标识" type="案件标识"/>
+			<xsd:element name="经办法院" type="SN"/>
+			<xsd:element name="案件类型" type="案件类型"/>
+			<xsd:element name="案号" type="C240" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="案件列表">
+		<xsd:sequence>
+			<xsd:element name="R" type="案件列表1" maxOccurs="1000"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="收结存列表1">
+		<xsd:sequence>
+			<xsd:element name="生成时间" type="DT"/>
+			<xsd:element name="案件列表" type="案件列表" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="收结存列表">
+		<xsd:sequence>
+			<xsd:element name="R" type="收结存列表1" maxOccurs="10"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

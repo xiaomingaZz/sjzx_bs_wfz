@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<EXPORT>
+	<!--  缺省状态为09,即默认09  -->
+	<VERSION>15</VERSION>
+    <!-- 高院的法院代码(必须高院 必须6为) -->
+	<FYDM>420000</FYDM>
+	<!-- 需要上报的5分钟接口的案件类型编码 -->
+	<!-- 执行部署的时候，仅需要配置17,47 -->
+	<!-- 审判部署的时候，如果需要排除执行案件则在案件类型编码没删除17,47这个2个执行的编码即可 -->
+	<!-- 具体参见《案件类型编码表（5分钟）》.xls 对应关系说明 -->
+	<!--  <SBAJLXDM>17,47</SBAJLXDM>-->
+	<!--  1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76-->
+	<!-- 四川 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48 -->
+	<!-- 湖北 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76 -->
+	<SBAJLXDM>17,47</SBAJLXDM>
+	<!-- ZX:执行  SP:审判 -->
+	<TYPE>ZX</TYPE>
+	<!-- 最高法新5分钟接口平台地址 -->
+	<!-- http://192.2.0.148:8099/spy/services/spdtService?wsdl -->
+	<JKURL>http://localhost:8888/sbfw/service/sjsbService.ws?wsdl</JKURL>
+	<!-- <JKURL>http://127.0.0.1:8080/sbfw/service/sjsbService.ws?wsdl</JKURL> -->
+	<!-- http://webservice.spdt.thunisoft.com/		 -->
+	<!-- 
+		15规范最高接口测试地址(JKURL)：http://192.2.0.175:8080/sffx-spy/services/spdtService?wsdl
+		15规范最高接口测试地址所属命名空间(NAMESPACE)：http://webservice.zb.ywk.xxq.thunisoft.com/
+	-->
+<!-- 	<NAMESPACE>http://webservice.zb.ywk.xxq.thunisoft.com/</NAMESPACE> -->
+	<NAMESPACE>http://webservice.spdt.thunisoft.com/</NAMESPACE>
+	<METHOD>importSpdtAndAjList15</METHOD>
+	<PARAMETER>xmlSpdt</PARAMETER>
+	<!-- 最高法旧5分钟上报接口地址 -->
+	<!-- http://192.0.0.203:9099/spy/services/spdtService?wsdl  -->
+	<OLDURL></OLDURL>
+    <!-- 5分钟数据上报临时文件生成目录 -->
+	<DIR>E:/Tdh/XML/WFZxml</DIR>
+	<!-- SQL过滤条件    用于过滤不需要上报的案件， SQL条件前无需加AND 必须为A.(A为EAJ重命名表名)-->
+	<!-- eg:DATALENGTH(A.AHDM)=15 -->
+	<FILTER></FILTER>
+	<!-- 是否把长度为18位、19位案号代码转为15位 （针对库中有执行系统的案件） false:长度不为15为的案件都屏蔽,true:长度为15，18，19位的
+		案件都报（18、19位的需要转换），其他屏蔽-->
+	<!-- eg:false -->
+	<FLAG_AHDM>true</FLAG_AHDM>
+	<!-- 用于排除具体法院不需要上报，例如新疆石河子法院，配置:651701-->
+	<!-- 多个法院时用","分隔，例如：651701,651702 -->
+	<FILTER_FYDM></FILTER_FYDM>
+	<!-- SBTJ删除时间记录 精确到秒 -->
+	<LASTSCSJ>2018/08/23 00:36:10</LASTSCSJ>
+</EXPORT>

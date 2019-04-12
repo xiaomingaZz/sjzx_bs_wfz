@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://EDI.court.gov.cn/2016" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EDI.court.gov.cn/2016" elementFormDefault="qualified">
+
+  <xsd:include schemaLocation="_0A_类型_基础.xsd"/>
+
+  <xsd:simpleType name="ID">
+    <xsd:restriction base="xsd:nonNegativeInteger">
+      <xsd:totalDigits value="19"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+  <xsd:simpleType name="CID">
+    <xsd:restriction base="xsd:nonNegativeInteger">
+      <xsd:totalDigits value="19"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+  <xsd:simpleType name="RID">
+    <xsd:restriction base="xsd:int"/>
+  </xsd:simpleType>
+  
+  <xsd:simpleType name="CF">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="1"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+  <xsd:simpleType name="Null">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="1"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+  <xsd:simpleType name="CEK">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[0-9a-f]{36}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+	<!-- 自定义数据 -->
+	<xsd:complexType name="ZDY">
+		<xsd:sequence>
+			<xsd:element name="序号" type="N"/>
+			<xsd:element name="说明" type="C100"/>
+			<xsd:element name="内容" type="BB"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<!-- 交换任务执行的元数据和厂商自定义数据 -->
+	<xsd:complexType name="JH">
+		<xsd:sequence>
+			<xsd:element name="接口实现厂商名称" type="C50"/>
+			<xsd:element name="接口组件名称及版本号" type="C80"/>
+			<xsd:element name="交换文件开始加工时间" type="DT" minOccurs="0"/>
+			<xsd:element name="交换文件生成结束时间" type="DT"/>
+			<xsd:element name="自定义附加数据" type="ZDY" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>

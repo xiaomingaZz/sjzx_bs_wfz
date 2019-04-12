@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="GB2312"?>
+<xsd:schema xmlns="http://dataexchange.court.gov.cn/2009/data"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   targetNamespace="http://dataexchange.court.gov.cn/2009/data"
+   elementFormDefault="qualified">
+   
+   <xsd:include schemaLocation="_A_类型_基础.xsd"/>
+   <xsd:element name="root" type="params"/>
+	
+	<xsd:simpleType name="ajlx">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1"/>
+			<xsd:enumeration value="2"/>
+			<xsd:enumeration value="3"/>
+			<xsd:enumeration value="4"/>
+			<xsd:enumeration value="5"/>
+			<xsd:enumeration value="6"/>
+			<xsd:enumeration value="7"/>
+			<xsd:enumeration value="8"/>
+			<xsd:enumeration value="9"/>
+			<xsd:enumeration value="10"/>
+			<xsd:enumeration value="11"/>
+			<xsd:enumeration value="12"/>
+			<xsd:enumeration value="13"/>
+			<xsd:enumeration value="14"/>
+			<xsd:enumeration value="15"/>
+			<xsd:enumeration value="16"/>
+			<xsd:enumeration value="17"/>
+			<xsd:enumeration value="18"/>
+			<xsd:enumeration value="19"/>
+			<xsd:enumeration value="20"/>
+			<xsd:enumeration value="21"/>
+			<xsd:enumeration value="22"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="data">
+		<xsd:sequence>
+			<xsd:element name="data" type="spdtdata1" minOccurs="0" maxOccurs="1000"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="spdtdata1">
+		<xsd:sequence>
+			<xsd:element name="id" type="SN"/>
+			<xsd:element name="drxs" type="laxq"/>
+			<xsd:element name="drja" type="jaxq"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="lalist">
+		<xsd:sequence>
+			<xsd:element name="ajlx" type="ajlx"/>
+			<xsd:element name="sl" type="SN"/>
+			<xsd:element name="lalist" type="laxxlist" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="jalist">
+		<xsd:sequence>
+			<xsd:element name="ajlx" type="ajlx"/>
+			<xsd:element name="sl" type="SN"/>
+			<xsd:element name="jalist" type="jaxxlist" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="laxx">
+		<xsd:sequence>
+			<xsd:element name="ajbs" type="案件标识"/>
+			<xsd:element name="ah" type="C50"/>
+			<xsd:element name="sarq" type="D" minOccurs="0"/>
+			<xsd:element name="larq" type="D" minOccurs="0"/>
+			<xsd:element name="laay" type="SN" minOccurs="0"/>
+			<xsd:element name="qsbdje" type="M" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="jaxx">
+		<xsd:sequence>
+			<xsd:element name="ajbs" type="案件标识"/>
+			<xsd:element name="ah" type="C50"/>
+			<xsd:element name="jarq" type="D" minOccurs="0"/>
+			<xsd:element name="jaay" type="SN" minOccurs="0"/>
+			<xsd:element name="jafs" type="SN" minOccurs="0"/>
+			<xsd:element name="jabdje" type="M" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="laxxlist">
+		<xsd:sequence>
+			<xsd:element name="laxx" type="laxx" minOccurs="0" maxOccurs="5000"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="jaxxlist">
+		<xsd:sequence>
+			<xsd:element name="jaxx" type="jaxx" minOccurs="0" maxOccurs="5000"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="laxq">
+		<xsd:sequence>
+			<xsd:element name="zs" type="SN"/>
+			<xsd:element name="laxq" type="lalist" minOccurs="0" maxOccurs="1000"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="jaxq">
+		<xsd:sequence>
+			<xsd:element name="zs" type="SN"/>
+			<xsd:element name="jaxq" type="jalist" minOccurs="0" maxOccurs="1000"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="params">
+		<xsd:sequence>
+			<xsd:element name="tjsj" type="DT"/>
+			<xsd:element name="gyid" type="SN"/>
+			<xsd:element name="datas" type="data" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>
